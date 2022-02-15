@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data</title>
+</head>
+<body>
+
+<!ginger format>
+{% for post in posts %} <!statement of for loop in html--use %>
+<p>{{post.first}}</p><!for every dictionary in post, this puts the post's title>
+<p>{{post.second}}</p>
+<p>{{post.third}}</p>
+{% endfor %}
+</body>
+</html>

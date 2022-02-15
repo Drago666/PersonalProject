@@ -1,0 +1,7 @@
+{%extends "Bootstrap example.html"%}
+
+{%block container%}
+{%for post in posts%}
+<p>{{post.title}} was made by {{post.author}} on {{post.date}}</p>
+{%endfor%}
+{%endblock container%}

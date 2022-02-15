@@ -1,0 +1,9 @@
+{%extends "Bootstrap example.html"%}
+
+{%block container%}<!overwriting something. essentially calls Bootstrap.html and inputs this block of code>
+    {% for post in posts %}
+    {{post.title}}
+    {{post.author}}
+    {{post.date}}
+    {% endfor %}
+{%endblock container%}
