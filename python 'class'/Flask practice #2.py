@@ -25,14 +25,14 @@ def showSecond():
 def BootstrapExample():
     return render_template("Bootstrap example.html")
 
-@app.route("/register", methods=['GET','POST'])
-def register():
-    form=RegistrationForm()
-    if form.validate_on_submit():
-        #flash(f'Account created for {form.username.data}!', 'success')
-        return redirect("showSecond")
-
-    return render_template("register.html", form=form)
+# @app.route("/register", methods=['GET','POST'])
+# def register():
+#     form=RegistrationForm()
+#     if form.validate_on_submit():
+#         #flash(f'Account created for {form.username.data}!', 'success')
+#         return redirect("showSecond")
+#
+#    return render_template("register.html", form=form)
 
 
 
