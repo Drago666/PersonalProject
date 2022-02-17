@@ -1,1 +1,1 @@
-web: gunicorn --bind 0.0.0.0:$PORT app:Flask practice #2
+web: gunicorn Flask practice #2:app --log-file -
